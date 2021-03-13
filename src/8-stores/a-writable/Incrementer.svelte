@@ -3,6 +3,7 @@
 
 	function increment() {
   // TODO increment the count
+		count.update(n => n + 1);
 	}
 </script>
 

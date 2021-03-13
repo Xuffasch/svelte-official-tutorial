@@ -3,6 +3,7 @@
 
 	function decrement() {
 		// TODO decrement the count
+		count.update(n => n - 1);
 	}
 </script>
 

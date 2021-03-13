@@ -6,10 +6,13 @@
 
 	let count_value;
 
-  // unsubscribe fonction to run on destroy of the component to avoid memory leak 
+  // unsubscribe fonction to run on destroy of the component to avoid memory leak
+  import { onDestroy } from 'svelte' 
 	const unsubscribe = count.subscribe(value => {
 		count_value = value;
 	});
+
+  onDestroy(unsubscribe)
 
 </script>
 
