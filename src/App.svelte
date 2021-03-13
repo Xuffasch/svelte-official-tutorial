@@ -1,5 +1,6 @@
 <script>
 	import Writable from './8-stores/a-writable/Writable.svelte'
+	import AutoSubscriptions from './8-stores/b-autoSubscriptions/Autosubscription.svelte'
 	export let name;
 </script>
 
@@ -45,5 +46,6 @@
 <section>
 	<h1 class='chapter-title'> 8 - Stores </h1>
 	<Writable />
+	<AutoSubscriptions />
 </section>
 

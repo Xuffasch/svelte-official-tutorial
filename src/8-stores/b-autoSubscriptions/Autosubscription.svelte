@@ -24,11 +24,12 @@
 
   .chapter {
     font-size: large;
+    font-weight: 400;
   }
 </style>
 
+<h1 class="chapter">b - Auto-subscriptions</h1>
 <div class='chapter-display'>
-  <h1 class="chapter">b - Auto-subscriptions</h1>
   <h1>The count is {count_value}</h1>
 
   <span>
