@@ -1,4 +1,5 @@
 <script>
+	import Writable from './8-stores/a-writable/Writable.svelte'
 	export let name;
 </script>
 
@@ -27,4 +28,22 @@
 			max-width: none;
 		}
 	}
+
+	.chapter-title {
+		font-size: x-large;
+		color: red;
+	}
+
+	section {
+		max-width: 240px;
+		display: flex;
+		flex-direction: column;
+		margin: 0 auto;
+	}
 </style>
+
+<section>
+	<h1 class='chapter-title'> 8 - Stores </h1>
+	<Writable />
+</section>
+
