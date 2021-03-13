@@ -3,15 +3,6 @@
 	import Incrementer from './Incrementer.svelte';
 	import Decrementer from './Decrementer.svelte';
 	import Resetter from './Resetter.svelte';
-
-  let count_value;
-
-  const unsubscribe = count.subscribe(value => {
-    count_value = value;
-  })
-
-  import { onDestroy } from 'svelte'
-  onDestroy(unsubscribe)
 </script>
 
 <style>
@@ -30,7 +21,7 @@
 
 <h1 class="chapter">b - Auto-subscriptions</h1>
 <div class='chapter-display'>
-  <h1>The count is {count_value}</h1>
+  <h1>The count is {$count}</h1>
 
   <span>
     <Incrementer/>
